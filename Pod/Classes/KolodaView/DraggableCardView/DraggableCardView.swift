@@ -222,6 +222,10 @@ public class DraggableCardView: UIView, UIGestureRecognizerDelegate {
         
         let touchLocation = gestureRecognizer.location(in: self)
         
+        if dragDistance.y != 0 {
+            dragDistance.y = 0
+        }
+        
         switch gestureRecognizer.state {
         case .began:
             
