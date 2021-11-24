@@ -617,7 +617,7 @@ open class KolodaView: UIView, DraggableCardDelegate {
             } else {
                 setupDeck()
                 layoutDeck()
-                applyAppearAnimationIfNeeded()
+                //applyAppearAnimationIfNeeded()
             }
         } else {
             reconfigureCards()
