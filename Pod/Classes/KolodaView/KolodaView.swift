@@ -300,6 +300,8 @@ open class KolodaView: UIView, DraggableCardDelegate {
     // MARK: Animations
     
     private func applyAppearAnimation() {
+        self.layoutDeck()
+	    /*
         alpha = 0
         isUserInteractionEnabled = false
         animationSemaphore.increment()
@@ -308,6 +310,7 @@ open class KolodaView: UIView, DraggableCardDelegate {
             self?.animationSemaphore.decrement()
             self?.layoutDeck()
         }
+	    */
     }
     
     public func applyAppearAnimationIfNeeded() {
